@@ -3285,13 +3285,9 @@ window.scrollTo({
         dimensionScores
     ) {
 
-        if (testArea) {
-
-            testArea.classList.add(
-                "hidden"
-            );
-
-        }
+       if (questionsContainer) {
+    questionsContainer.classList.add("hidden");
+}
 
 
         if (!result) {
@@ -3545,14 +3541,9 @@ window.scrollTo({
                     }
 
 
-                    if (testArea) {
-
-                        testArea.classList.remove(
-                            "hidden"
-                        );
-
-                    }
-
+                    if (questionsContainer) {
+    questionsContainer.classList.remove("hidden");
+}
 
                     renderCityQuestions();
 
