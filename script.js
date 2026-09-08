@@ -2902,25 +2902,21 @@ function initializeCityDiagnosis() {
         }
 
 
-        if (testArea) {
+        if (intro) {
+    intro.classList.add("hidden");
+}
 
-            testArea.classList.remove(
-                "hidden"
-            );
+if (questionsContainer) {
+    questionsContainer.classList.remove("hidden");
+}
 
-        }
+renderCityQuestions();
+updateCityProgress();
 
-
-        renderCityQuestions();
-
-        updateCityProgress();
-
-
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-
+window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+});
     }
 
 
